@@ -1,0 +1,74 @@
+@import "../../var.css";
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    justify-content: space-between;
+    margin: 0 10px;
+    z-index: 2;
+}
+
+.title{
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+}
+.menuButton{
+  display: none;
+}
+.menu{
+  display: flex;
+}
+
+.menulist{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menulist a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+       flex-direction: column;
+      align-items: flex-start;
+
+    }
+    .menu{
+      position: absolute;
+      right: 0;
+      margin-right: 10%;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      z-index: 3;
+    }
+
+    .menuButton{
+      display: block;
+      cursor: pointer;
+    }
+
+    .menulist{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background: rgba(86, 26, 197, 0.37);
+      padding: 24px 34px;
+    }
+  
+    .menulist.open{
+      display: flex;
+      z-index: 1;
+    }
+}

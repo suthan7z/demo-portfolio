@@ -1,0 +1,118 @@
+@import "../../var.css";
+
+.container{
+  position: relative;
+  background-color: rgb(217, 224, 245);
+  border-radius: 15px;
+  z-index: 1;
+  padding: 70px ;
+  margin-top: 120px;
+  margin-left: 10%;
+  margin-right: 10%;
+  
+}
+
+.title{
+  color: aqua;
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.content{
+  display: block;
+  align-items: center;
+}
+
+
+
+.logoImg{
+  width: 65%;       
+  height: auto;     
+  object-fit: cover; 
+  border-radius: 35px;  
+}
+.aboutItem{
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+ .description{
+  font-size: 25px;
+ }
+
+ .skillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.subtitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #7c45e0;
+}
+
+.icons {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 60px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  color: #ff6600; /* hover color, can customize per icon if needed */
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 30px;  /* smaller padding */
+  }
+
+  .content {
+    flex-direction: column; /* stack text and image vertically */
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* space between image and text */
+  }
+
+  .logoImg {
+    width: 80%;   /* shrink image */
+    border-radius: 25px;
+  }
+
+  .aboutItem {
+    padding: 8px;
+  }
+
+  .description {
+    font-size: 20px; /* smaller font on mobile */
+  }
+
+  .skillsSection {
+    margin: 30px 0;
+  }
+
+  .icons {
+    gap: 20px;
+  }
+
+  .icon {
+    font-size: 45px;  /* smaller icons */
+  }
+}

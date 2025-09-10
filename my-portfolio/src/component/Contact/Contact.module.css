@@ -1,0 +1,40 @@
+.container {
+  padding: 70px;              /* same as About module */
+  margin-top: 60px;          /* spacing from previous section */
+  margin-left: 10%;           /* same horizontal spacing as About */
+  margin-right: 10%;          /* same horizontal spacing */
+  background-color: #f9f9f9;
+  border-radius: 15px;        /* same rounded corners */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 1000px;          /* keep optional max width */
+}
+
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 2rem;
+}
+
+.icons a {
+  color: #007bff;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+  color: #0056b3;
+}
