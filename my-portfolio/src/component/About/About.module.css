@@ -73,7 +73,7 @@
 
 .icon:hover {
   transform: scale(1.2);
-  color: #ff6600; /* hover color, can customize per icon if needed */
+  color: #ff6600; 
 }
 
 
@@ -81,18 +81,18 @@
   .container {
     margin-left: 5%;
     margin-right: 5%;
-    padding: 30px;  /* smaller padding */
+    padding: 30px; 
   }
 
   .content {
-    flex-direction: column; /* stack text and image vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
-    gap: 20px; /* space between image and text */
+    gap: 20px; 
   }
 
   .logoImg {
-    width: 80%;   /* shrink image */
+    width: 80%;   
     border-radius: 25px;
   }
 
@@ -101,7 +101,7 @@
   }
 
   .description {
-    font-size: 20px; /* smaller font on mobile */
+    font-size: 20px; 
   }
 
   .skillsSection {
@@ -113,6 +113,6 @@
   }
 
   .icon {
-    font-size: 45px;  /* smaller icons */
+    font-size: 45px;  
   }
 }

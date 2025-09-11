@@ -18,7 +18,7 @@ const [isOpen, setIsOpen] = useState(false);
       {/* Hamburger button */}
       <button
         className={styles.menuButton}
-        onClick={() => setIsOpen(!isOpen)}  // ⬅ use setIsOpen here
+        onClick={() => setIsOpen(!isOpen)}  
         aria-label="menu"
       >
         <MenuIcon isOpen={isOpen} />
